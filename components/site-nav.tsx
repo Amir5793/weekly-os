@@ -8,7 +8,7 @@ import { ThemeToggle } from "@/components/theme-toggle";
 import { APP } from "@/lib/data";
 
 /** آدرس همراه (مولد روتین) — با NEXT_PUBLIC_COMPANION_URL قابل بازتعریف است. */
-const COMPANION_URL = process.env.NEXT_PUBLIC_COMPANION_URL ?? "http://localhost:3001";
+const COMPANION_URL = process.env.NEXT_PUBLIC_COMPANION_URL ?? "https://amir5793.github.io/Routine-Generator/";
 
 const LINKS = [
   { href: "/", label: "نمای کلی" },
