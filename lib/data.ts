@@ -277,7 +277,11 @@ export const DAYS: DayData[] = [
     key: "thu",
     name: "پنجشنبه",
     school: [],
-    maz: [],
+    maz: [
+      {day: "thu", subject: "پیش آزمون ماز", time: "08:00–15:00", startsAt: "08:00",
+        timeKind: "window", timeNote: "مدت خود آزمون 2 ساعت",
+        priority: "A+", execution: EXEC.EXAM, examOnly: true},
+    ],
     notes: [
       { text: "این روز را به تمرین و مرور برنامه‌ریزی‌شده اختصاص می‌دهیم." },
       { text: "در کنار آن استراحت می‌کنیم و برای آزمون‌های اساتید و آمادگی آزمون آماده می‌شویم." },
@@ -295,9 +299,14 @@ export const DAYS: DayData[] = [
     maz: [
       {
         day: "fri", subject: "آزمون آنلاین ماز", time: "08:00–15:00", startsAt: "08:00",
-        timeKind: "window", timeNote: "مدت خود آزمون ۳ ساعت",
+        timeKind: "window", timeNote: "مدت خود آزمون 2 ساعت",
         priority: "A+", execution: EXEC.EXAM, examOnly: true,
       },
+      {
+        day: "fri", subject: "آزمون حضوری قلمچی", time: "07:00–10:45", startsAt: "08:00",
+        timeKind: "window", timeNote: "مدت خود آزمون 2 ساعت",
+        priority: "A+", execution: EXEC.EXAM, examOnly: true,
+      }
     ],
     notes: [
       { text: "۸ ساعت برای استراحت و زمان شخصی در نظر گرفته می‌شود." },
